@@ -1,4 +1,4 @@
-class Goss < FPM::Cookery::Recipe
+class Terraform < FPM::Cookery::Recipe
   description 'Terraform is a tool for building, changing, and combining infrastructure safely and efficiently'
   homepage    'https://www.terraform.io'
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
