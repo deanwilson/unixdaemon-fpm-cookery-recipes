@@ -28,11 +28,17 @@ create a `goss` `Debian` package.
 
 You can now list the contents of the package -
 
-    dpkg -c goss_0.1.3_amd64.deb
+    dpkg -c pkg/goss_*.deb
 
     drwxrwxr-x 0/0               0 2016-04-05 23:36 ./usr/local/
     drwxrwxr-x 0/0               0 2016-04-05 23:36 ./usr/local/bin/
     -rwxrwxr-x 0/0         2323228 2016-04-05 23:36 ./usr/local/bin/goss
+
+On Redhat you can build and confirm the package contents with
+
+    bundle exec fpm-cook --target rpm package
+
+    rpm -qilp  pkg/goss*.rpm
 
 #### Author
 [Dean Wilson](http://www.unixdaemon.net)
