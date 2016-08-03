@@ -20,7 +20,7 @@ personal use.
 Now we'll build one of the packages from our recipes. In this case we'll
 create a `goss` `Debian` package.
 
-    cd recipes/goss
+    cd goss
 
     bundle exec fpm-cook --target deb package
     ... snip ...
