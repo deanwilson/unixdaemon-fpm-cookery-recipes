@@ -4,12 +4,12 @@ class Terraform < FPM::Cookery::Recipe
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'terraform'
-  version '0.7.0'
+  version '0.7.1'
   license 'MPLv2.0'
   arch    'amd64'
 
   source "https://releases.hashicorp.com/terraform/#{version}/terraform_#{version}_linux_amd64.zip"
-  sha256 'a196c63b967967343f3ae9bb18ce324a18b27690e2d105e1f38c5a2d7c02038d'
+  sha256 '133766ed558af04255490f135fed17f497b9ba1e277ff985224e1287726ab2dc'
 
   def build
   end
