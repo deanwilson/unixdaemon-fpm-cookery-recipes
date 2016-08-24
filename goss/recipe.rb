@@ -4,11 +4,11 @@ class Goss < FPM::Cookery::Recipe
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'goss'
-  version '0.1.8'
+  version '0.2.3'
   license 'Apache-2.0'
 
   source "https://github.com/aelsabbahy/goss/releases/download/v#{version}/goss-linux-amd64"
-  sha256 'd817b07fa731bc6f773078b3d608ad6fd55a648174f2941731edbddfdf3f51d4'
+  sha256 '3529ee6c68888a3c296dca1a3ff9c235c2fed4c641e3a25b44f231cd8ac0025f'
 
   def build
   end
