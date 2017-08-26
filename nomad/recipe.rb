@@ -1,4 +1,4 @@
-class Nomad< FPM::Cookery::Recipe
+class Nomad < FPM::Cookery::Recipe
   name 'nomad'
   homepage 'https://www.nomadproject.io/'
 
@@ -10,8 +10,7 @@ class Nomad< FPM::Cookery::Recipe
   maintainer 'Dean Wilson <dean.wilson@gmail.com>'
   license 'Mozilla Public License, version 2.0'
 
-  def build
-  end
+  def build; end
 
   def install
     safesystem "mkdir -p #{destdir}/usr/local/bin/"

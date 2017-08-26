@@ -12,11 +12,9 @@ class PuppetLs < FPM::Cookery::Recipe
 
   arch 'all'
 
-  def build
-  end
+  def build; end
 
   def install
     prefix('local/bin').install 'puppet-ls'
   end
-
 end

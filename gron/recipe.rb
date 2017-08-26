@@ -10,8 +10,7 @@ class Gron < FPM::Cookery::Recipe
   source "https://github.com/tomnomnom/gron/releases/download/v#{version}/gron-linux-amd64-#{version}.tgz"
   sha256 '12a02cdb037858f2956024ed6ab61b8461182cde12626708d8f033da3faaf613'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"

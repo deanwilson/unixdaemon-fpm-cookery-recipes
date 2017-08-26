@@ -9,8 +9,7 @@ class DockerImageCleaner < FPM::Cookery::Recipe
   source "https://github.com/docwhat/docker-image-cleaner/releases/download/v#{version}/docker-image-cleaner_linux_amd64"
   sha256 '8ef18b79646d0e7e117046f393d32fa127a341b7a49bd96efccae68db92154d9'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"

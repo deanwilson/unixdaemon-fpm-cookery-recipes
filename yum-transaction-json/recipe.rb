@@ -13,8 +13,7 @@ class YumTransactionJSON < FPM::Cookery::Recipe
   arch 'all'
   depends ['python-simplejson']
 
-  def build
-  end
+  def build; end
 
   def install
     plugin_dir = "#{destdir}/usr/lib/yum-plugins"
@@ -25,5 +24,4 @@ class YumTransactionJSON < FPM::Cookery::Recipe
     etc('yum/pluginconf.d').install   'transaction-json.conf'
     prefix('lib/yum-plugins').install 'transaction-json.py' # prefix defaults to /usr
   end
-
 end

@@ -11,8 +11,7 @@ class Terraform < FPM::Cookery::Recipe
   source "https://releases.hashicorp.com/terraform/#{version}/terraform_#{version}_linux_amd64.zip"
   sha256 '133766ed558af04255490f135fed17f497b9ba1e277ff985224e1287726ab2dc'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"
@@ -20,5 +19,4 @@ class Terraform < FPM::Cookery::Recipe
     safesystem "mkdir -p #{target_dir}"
     safesystem "cp #{builddir}/terraform_#{version}_linux_amd64/* #{target_dir}/"
   end
-
 end
