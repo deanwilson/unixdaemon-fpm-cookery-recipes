@@ -24,5 +24,4 @@ class YumTransactionJSON < FPM::Cookery::Recipe
     etc('yum/pluginconf.d').install   'transaction-json.conf'
     prefix('lib/yum-plugins').install 'transaction-json.py' # prefix defaults to /usr
   end
-
 end

@@ -19,5 +19,4 @@ class Vegata < FPM::Cookery::Recipe
     safesystem "mkdir -p #{target_dir}"
     safesystem "cp #{builddir}/vegeta #{target_dir}/"
   end
-
 end

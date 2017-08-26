@@ -17,5 +17,4 @@ class PuppetLs < FPM::Cookery::Recipe
   def install
     prefix('local/bin').install 'puppet-ls'
   end
-
 end

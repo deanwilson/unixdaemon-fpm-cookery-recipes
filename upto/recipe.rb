@@ -17,5 +17,4 @@ class Upto < FPM::Cookery::Recipe
   def install
     etc('profile.d').install 'upto.sh'
   end
-
 end

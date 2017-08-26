@@ -19,5 +19,4 @@ class Terraform < FPM::Cookery::Recipe
     safesystem "mkdir -p #{target_dir}"
     safesystem "cp #{builddir}/terraform_#{version}_linux_amd64/* #{target_dir}/"
   end
-
 end

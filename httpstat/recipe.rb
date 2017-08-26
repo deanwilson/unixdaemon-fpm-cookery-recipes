@@ -20,5 +20,4 @@ class HTTPStat < FPM::Cookery::Recipe
     safesystem "cp #{builddir}/httpstat-linux-amd64-v#{version}/http* #{target_dir}/httpstat"
     safesystem "chmod +x #{target_dir}/httpstat"
   end
-
 end
