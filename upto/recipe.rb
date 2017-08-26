@@ -9,8 +9,8 @@ class Upto < FPM::Cookery::Recipe
   arch    'all'
 
   source 'https://github.com/driv/upto.git',
-    :with => 'git',
-    :sha  => '828c47dce9a60c02ba4ac77b9b661cbc8e252f4e'
+         :with => 'git',
+         :sha  => '828c47dce9a60c02ba4ac77b9b661cbc8e252f4e'
 
   def build; end
 
