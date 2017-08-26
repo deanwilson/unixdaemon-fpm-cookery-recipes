@@ -1,4 +1,4 @@
-class Nomad< FPM::Cookery::Recipe
+class Nomad < FPM::Cookery::Recipe
   name 'nomad'
   homepage 'https://www.nomadproject.io/'
 
