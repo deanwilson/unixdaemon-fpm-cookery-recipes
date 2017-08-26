@@ -12,8 +12,7 @@ class CheckAges < FPM::Cookery::Recipe
     with: 'git',
     sha: '4073ee1bd36c8d59afef0a734c7c6867e50d11ed'
 
-  def build
-  end
+  def build; end
 
   def install
     root('/usr/lib64/nagios/plugins').install 'check_ages/check_ages'

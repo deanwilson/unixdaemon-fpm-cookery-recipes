@@ -10,8 +10,7 @@ class Goss < FPM::Cookery::Recipe
   source "https://github.com/aelsabbahy/goss/releases/download/v#{version}/goss-linux-amd64"
   sha256 '3529ee6c68888a3c296dca1a3ff9c235c2fed4c641e3a25b44f231cd8ac0025f'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"
@@ -20,5 +19,4 @@ class Goss < FPM::Cookery::Recipe
     safesystem "cp goss-linux-amd64 #{target_dir}/goss"
     safesystem "chmod +x #{target_dir}/goss"
   end
-
 end

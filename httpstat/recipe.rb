@@ -11,8 +11,7 @@ class HTTPStat < FPM::Cookery::Recipe
   source "https://github.com/davecheney/httpstat/releases/download/v#{version}/httpstat-linux-amd64-v#{version}"
   sha256 '9edc7d57a1c726b8a357ea61d9aa3f7c8c75a69777ca21e2afdf5f8331a9ecbc'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"

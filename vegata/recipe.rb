@@ -11,8 +11,7 @@ class Vegata < FPM::Cookery::Recipe
   source "https://github.com/tsenart/vegeta/releases/download/v#{version}/vegeta-v#{version}-linux-amd64.tar.gz"
   sha256 '2f0a69d0ae6f0bf268b7f655bd37c0104d5568d5b2bc45bbb2c405266f74e33d'
 
-  def build
-  end
+  def build; end
 
   def install
     target_dir = "#{destdir}/usr/local/bin"
