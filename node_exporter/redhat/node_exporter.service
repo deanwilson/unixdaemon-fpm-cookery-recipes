@@ -1,0 +1,22 @@
+[Unit]
+Description=Node Exporter
+Documentation=https://github.com/prometheus/node_exporter
+After=network.target
+Wants=network.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+# TODO won't work on debian based OS
+EnvironmentFile=/etc/sysconfig/node_exporter
+ExecStart=/usr/sbin/node_exporter $OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+# https://gist.github.com/ageis/f5595e59b1cddb1513d1b425a323db04
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=read-only
+ProtectSystem=stricta
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
