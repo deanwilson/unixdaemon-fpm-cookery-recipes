@@ -14,10 +14,9 @@ class HTTPStat < FPM::Cookery::Recipe
   def build; end
 
   def install
-    target_dir = "#{destdir}/usr/local/bin"
+    binary_path = "httpstat-linux-amd64-v#{version}/httpstat-linux-amd64-v#{version}"
 
-    safesystem "mkdir -p #{target_dir}"
-    safesystem "cp #{builddir}/httpstat-linux-amd64-v#{version}/http* #{target_dir}/httpstat"
-    safesystem "chmod +x #{target_dir}/httpstat"
+    chmod 0755, builddir(binary_path)
+    bin.install builddir(binary_path), 'httpstat'
   end
 end
