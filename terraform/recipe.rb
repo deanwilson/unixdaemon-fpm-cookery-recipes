@@ -4,19 +4,16 @@ class Terraform < FPM::Cookery::Recipe
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'terraform'
-  version '0.7.1'
+  version '0.11.7'
   license 'MPLv2.0'
   arch    'amd64'
 
   source "https://releases.hashicorp.com/terraform/#{version}/terraform_#{version}_linux_amd64.zip"
-  sha256 '133766ed558af04255490f135fed17f497b9ba1e277ff985224e1287726ab2dc'
+  sha256 '6b8ce67647a59b2a3f70199c304abca0ddec0e49fd060944c26f666298e23418'
 
   def build; end
 
   def install
-    target_dir = "#{destdir}/usr/local/bin"
-
-    safesystem "mkdir -p #{target_dir}"
-    safesystem "cp #{builddir}/terraform_#{version}_linux_amd64/* #{target_dir}/"
+    bin.install builddir("terraform_#{version}_linux_amd64/terraform")
   end
 end
