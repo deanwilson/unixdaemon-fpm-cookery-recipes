@@ -4,19 +4,15 @@ class Gron < FPM::Cookery::Recipe
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'gron'
-  version '0.3.6'
+  version '0.5.2'
   license 'Apache-2.0'
 
   source "https://github.com/tomnomnom/gron/releases/download/v#{version}/gron-linux-amd64-#{version}.tgz"
-  sha256 '12a02cdb037858f2956024ed6ab61b8461182cde12626708d8f033da3faaf613'
+  sha256 '819f08dfa10bcc5ed9c7005c4a8e7fce539042d115ab0d9662bc7e31e8f3c919'
 
   def build; end
 
   def install
-    target_dir = "#{destdir}/usr/local/bin"
-
-    safesystem "mkdir -p #{target_dir}"
-    safesystem "cp gron #{target_dir}/"
-    safesystem "chmod +x #{target_dir}/gron"
+    bin.install builddir('gron')
   end
 end

@@ -14,12 +14,10 @@ class Json2Hcl < FPM::Cookery::Recipe
   def build; end
 
   def install
-    target_dir = "#{destdir}/usr/local/bin"
-
     # make a reusable name to make the cp easier to read
-    file_name = "json2hcl_v#{version}_linux_amd64"
+    binary_name = "json2hcl_v#{version}_linux_amd64"
 
-    safesystem "mkdir -p #{target_dir}"
-    safesystem "cp #{builddir}/#{file_name}/#{file_name} #{target_dir}/json2hcl"
+    chmod 0755, builddir("#{binary_name}/#{binary_name}")
+    bin.install builddir("#{binary_name}/#{binary_name}"), 'json2hcl'
   end
 end
