@@ -38,7 +38,7 @@ On Redhat you can build and confirm the package contents with
 
     bundle exec fpm-cook --target rpm package
 
-    rpm -qilp  pkg/goss*.rpm
+    rpm -qvilp  pkg/goss*.rpm
 
 #### Author
 [Dean Wilson](http://www.unixdaemon.net)
