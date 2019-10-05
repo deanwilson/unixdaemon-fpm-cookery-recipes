@@ -40,5 +40,7 @@ On Redhat you can build and confirm the package contents with
 
     rpm -qvilp  pkg/goss*.rpm
 
+This requires the `rpm-build` to be present.
+
 #### Author
 [Dean Wilson](http://www.unixdaemon.net)
