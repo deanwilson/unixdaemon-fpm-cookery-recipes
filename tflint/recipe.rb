@@ -4,11 +4,11 @@ class Tflint < FPM::Cookery::Recipe
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'tflint'
-  version '0.12.0'
+  version '0.12.1'
   license 'MPL 2.0'
 
   source "https://github.com/wata727/tflint/releases/download/v#{version}/tflint_linux_amd64.zip"
-  sha256 '2a9145adff49d4807b0fbff10b6d7c1c2fc4c2342a1fa02908171cbbabd966f2'
+  sha256 '5ae01a03a1c0ed0359bd795de735ce5fc8984611cd58866f67a545d7a17209c6'
 
   def build; end
 
