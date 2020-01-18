@@ -42,5 +42,22 @@ On Redhat you can build and confirm the package contents with
 
 This requires the `rpm-build` to be present.
 
+## Notes
+
+I have seen the occasional addition of extra files when building
+packages on Fedora instances.
+
+    rpm -qvilp  pkg/*.rpm
+    ... snip ...
+    drwxr-xr-x  2 root  root  0 Jan 18 17:05 /usr/lib/.build-id
+    drwxr-xr-x  2 root  root  0 Jan 18 17:05 /usr/lib/.build-id/3b
+
+Setting the `_build_id_links` macro to `none` seems to prevent this
+behaviour. In my case I've added it to the `~/.rpmmacros`
+configuration file.
+
+    cat ~/.rpmmacros
+    %_build_id_links none
+
 #### Author
 [Dean Wilson](http://www.unixdaemon.net)
