@@ -10,7 +10,7 @@ class CheckDebianUpdates < FPM::Cookery::Recipe
 
   source 'https://github.com/deanwilson/nagios-plugins.git',
          with: 'git',
-         sha: '4073ee1bd36c8d59afef0a734c7c6867e50d11ed'
+         sha:  '4073ee1bd36c8d59afef0a734c7c6867e50d11ed'
 
   def build; end
 
