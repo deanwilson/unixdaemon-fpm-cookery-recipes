@@ -1,8 +1,24 @@
-Metrics/LineLength:
+Layout/LineLength:
   Max: 130
-Documentation:
-  Enabled: false
-Style/FrozenStringLiteralComment:
+Style/Documentation:
   Enabled: false
 Style/NumericLiteralPrefix:
   Enabled: false
+
+AllCops:
+  NewCops: enable
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: 'comma'
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+Metrics/BlockLength:
+  Max: 35
+  ExcludedMethods: [ 'describe' ]
+Metrics/MethodLength:
+  Max: 25
+Metrics/AbcSize:
+  Max: 30
+Metrics/CyclomaticComplexity:
+  Max: 10
