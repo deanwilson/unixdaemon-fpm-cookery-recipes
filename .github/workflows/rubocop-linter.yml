@@ -3,7 +3,7 @@ name: Rubocop linter
 on:
   push:
     branches-ignore:
-      - 'master'
+      - 'main'
 
 jobs:
   lint:

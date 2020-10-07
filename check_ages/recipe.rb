@@ -1,6 +1,6 @@
 class CheckAges < FPM::Cookery::Recipe
   description 'Nagios plugin to alert on "old" files in a given directory.'
-  homepage    'https://github.com/deanwilson/nagios-plugins/tree/master/check_ages'
+  homepage    'https://github.com/deanwilson/nagios-plugins/tree/main/check_ages'
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'nagios-plugins-check_ages'

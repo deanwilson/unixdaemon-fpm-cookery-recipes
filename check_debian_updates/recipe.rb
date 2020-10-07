@@ -1,6 +1,6 @@
 class CheckDebianUpdates < FPM::Cookery::Recipe
   description 'Nagios plugin to alert when installed Debian packages require updates'
-  homepage    'https://github.com/deanwilson/nagios-plugins/blob/master/check_debian_updates/'
+  homepage    'https://github.com/deanwilson/nagios-plugins/blob/main/check_debian_updates/'
   maintainer  'Dean Wilson <dean.wilson@gmail.com>'
 
   name    'nagios-plugins-check_debian_updates'
