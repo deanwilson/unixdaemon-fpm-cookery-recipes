@@ -1,5 +1,7 @@
 # Unixdaemon: FPM-Cookery Recipes
 
+[![Actions Status](https://github.com/deanwilson/unixdaemon-fpm-cookery-recipes/workflows/Rubocop%20linter/badge.svg)](https://github.com/deanwilson/unixdaemon-fpm-cookery-recipes/actions)
+
 `fpm-cookery` is a very helpful wrapper around the excellent `fpm`
 rubygem, a gem that makes building packages amazingly easy. Cookery
 extends `fpms` powers by handling additional infrastructure requirements
