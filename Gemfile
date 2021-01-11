@@ -4,4 +4,4 @@ source 'https://rubygems.org'
 
 gem 'fpm-cookery', '~> 0.35.1'
 gem 'rake', '~> 13.0.1'
-gem 'rubocop', '1.7.0', require: false
+gem 'rubocop', '1.8.0', require: false
