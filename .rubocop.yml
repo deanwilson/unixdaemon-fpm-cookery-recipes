@@ -15,7 +15,7 @@ Layout/HashAlignment:
   EnforcedColonStyle: table
 Metrics/BlockLength:
   Max: 35
-  ExcludedMethods: [ 'describe' ]
+  IgnoredMethods: [ 'describe' ]
 Metrics/MethodLength:
   Max: 25
 Metrics/AbcSize:
